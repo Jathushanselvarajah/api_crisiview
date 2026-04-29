@@ -20,6 +20,12 @@ pipeline {
         TEST_DB_CONTAINER = "crisisview-api-test-db-${BUILD_NUMBER}"
         TEST_DB_NAME = 'incident_test'
         MYSQL_ROOT_PASSWORD = 'root'
+        BACKEND_HOST = "${params.BACKEND_HOST}"
+        BACKEND_USER = "${params.BACKEND_USER}"
+        REMOTE_APP_DIR = "${params.REMOTE_APP_DIR}"
+        BACKEND_IMAGE = "${params.BACKEND_IMAGE}"
+        SONAR_HOST_URL = "${params.SONAR_HOST_URL}"
+        RUN_SEED = "${params.RUN_SEED}"
     }
 
     stages {
